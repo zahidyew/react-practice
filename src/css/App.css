@@ -1,0 +1,19 @@
+.title-div {
+   text-align: center;
+}
+
+.content-div {
+   padding: 10px 150px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-div {
+    padding: 10px 75px 0
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .content-div {
+    padding: 5px 25px 0
+  }
+}

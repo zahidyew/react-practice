@@ -8,7 +8,7 @@ import Comments from './components/comments/Comments'
 import Albums from './components/albums/Albums'
 import Users from './components/users/Users'
 import Photos from './components/photos/Photos'
-import './App.css'
+import './css/App.css'
 
 function App() {
   return (
