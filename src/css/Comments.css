@@ -1,3 +1,7 @@
+#toggle {
+   color: rgb(0, 80, 255)
+}
+
 div.hide {
    display: none;
 }
@@ -7,9 +11,15 @@ div.show {
 }
 
 div.comments-div {
-   padding: 0 20px;
+   padding: 0 50px;
 }
 
-/* div.show p {
-   padding: 0 20px;
-} */
+div.comments-div h5 {
+   margin-bottom: -10px;
+}
+
+div.comments-div span {
+   font-weight: lighter;
+   color: rgb(100, 100, 100);
+   /* float: right; */
+}

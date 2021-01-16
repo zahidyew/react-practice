@@ -4,9 +4,8 @@ import PropTypes from 'prop-types'
 const CommentItem = ({comment}) => {
    return (
       <div className="comments-div">
-         <h3> {comment.id}. {comment.name} </h3>
+         <h5> {comment.name} <span> | ({comment.email}) </span> </h5>
          <p> {comment.body} </p>
-         {/* <p> {comment.email} </p> */}
       </div>
    )
 }
