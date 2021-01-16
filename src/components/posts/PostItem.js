@@ -5,6 +5,7 @@ import '../../css/Comments.css'
 
 const PostItem = ({post}) => {
    const [text, setText] = useState('\u25BE View Comments')
+   const [flag, setFlag] = useState(false)
 
    const showComments = (id) => {
       const commentsDiv = document.getElementById('comments' + id)
@@ -12,10 +13,12 @@ const PostItem = ({post}) => {
       if(commentsDiv.className.includes('hide')) {
          commentsDiv.className = commentsDiv.className.replace('hide', 'show')
          setText('\u25B4 Hide Comments')
+         setFlag(true)
       }
       else {
          commentsDiv.className = commentsDiv.className.replace('show', 'hide')
          setText('\u25BE View Comments')
+         setFlag(false)
       }
    }
 
@@ -26,7 +29,11 @@ const PostItem = ({post}) => {
          <p id="toggle" onClick={() => showComments(post.id)}> {text} </p>
 
          <div id={'comments' + post.id} className="hide">
-            <Comments postId={post.id} />
+            {/* <Comments postId={post.id} /> */}
+            { // conditional rendering. if flag is true, then we display the comments
+            flag === true && 
+               <Comments postId={post.id} />
+            }
          </div>
 
       </div>
