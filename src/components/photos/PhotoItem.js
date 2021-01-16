@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const PhotoItem = ({photo}) => {
    return (
       <div className="content-div">
-         <h3> {photo.id}. {photo.title} </h3>
+         <p> {photo.id}. {photo.title} </p>
       </div>
    )
 }

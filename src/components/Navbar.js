@@ -20,9 +20,8 @@ const Navbar = () => {
             <li id="burgerMenu" onClick={() => showMenu()}> <span> &#8801; </span> </li>
             <li className="navbar-options"><Link to="/"> <span> Posts </span> </Link></li>
             <li className="navbar-options"><Link to="/todos"> <span> Todos </span> </Link></li>
-            {/* <li className="navbar-options"><Link to="/comments"> <span> Comments </span> </Link></li> */}
             <li className="navbar-options"><Link to="/albums"> <span> Albums </span> </Link></li>
-            <li className="navbar-options"><Link to="/photos"> <span> Photos </span> </Link></li>
+            {/* <li className="navbar-options"><Link to="/photos"> <span> Photos </span> </Link></li> */}
             <li className="navbar-options"><Link to="/users"> <span> Users </span> </Link></li>
          </ul>
 
@@ -30,9 +29,8 @@ const Navbar = () => {
          <ul id="mini-navbar" className="">
             <li onClick={() => showMenu()}><Link to="/"> <span> Posts </span> </Link></li>
             <li onClick={() => showMenu()}><Link to="/todos"> <span> Todos </span> </Link></li>
-            {/* <li onClick={() => showMenu()}><Link to="/comments"> <span> Comments </span> </Link></li> */}
             <li onClick={() => showMenu()}><Link to="/albums"> <span> Albums </span> </Link></li>
-            <li onClick={() => showMenu()}><Link to="/photos"> <span> Photos </span> </Link></li>
+            {/* <li onClick={() => showMenu()}><Link to="/photos"> <span> Photos </span> </Link></li> */}
             <li onClick={() => showMenu()}><Link to="/users"> <span> Users </span> </Link></li>
          </ul>
       </>
