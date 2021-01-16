@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Posts} />
           <Route path="/todos" component={Todos} />
-          <Route path="/comments" component={Comments} />
+          <Route path="/comments/:postId" component={Comments} />
           <Route path="/albums" component={Albums} />
           <Route path="/photos" component={Photos} />
           <Route path="/users" component={Users} />
