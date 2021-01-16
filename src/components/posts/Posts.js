@@ -10,7 +10,7 @@ const Posts = () => {
          const response = await fetch('https://jsonplaceholder.typicode.com/posts')
          const data = await response.json(response)
 
-         console.log(data)
+         //console.log(data)
          setPosts(data)
       }
       fetchPosts()

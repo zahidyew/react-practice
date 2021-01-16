@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const CommentItem = ({comment}) => {
    return (
-      <div className="content-div">
+      <div className="comments-div">
          <h3> {comment.id}. {comment.name} </h3>
          <p> {comment.body} </p>
          {/* <p> {comment.email} </p> */}

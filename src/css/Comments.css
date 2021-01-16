@@ -1,0 +1,15 @@
+div.hide {
+   display: none;
+}
+
+div.show {
+   display: inline;
+}
+
+div.comments-div {
+   padding: 0 20px;
+}
+
+/* div.show p {
+   padding: 0 20px;
+} */
