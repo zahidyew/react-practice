@@ -18,7 +18,7 @@ function App() {
         </div>
         <Switch>
           <Route path="/" exact component={Posts} />
-          <Route path="/todos" component={Todos} />
+          <Route path="/todos/:userId" component={Todos} />
           <Route path="/albums" component={Albums} />
           <Route path="/photos/:albumId" component={Photos} />
           <Route path="/users" component={Users} />

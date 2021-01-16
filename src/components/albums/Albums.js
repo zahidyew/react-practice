@@ -10,7 +10,7 @@ const Albums = () => {
          const response = await fetch(url)
          const data = await response.json()
 
-         console.log(data)
+         //console.log(data)
          setAlbums(data)
       }  
       fetchAlbums()

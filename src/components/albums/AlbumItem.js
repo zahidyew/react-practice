@@ -10,7 +10,7 @@ const AlbumItem = ({album}) => {
    return (
       <div className="content-div">
          <p> {album.id}. {album.title} </p>
-         <Link to={pageUrl}> See Photos </Link>
+         <Link to={pageUrl}> <span className="links"> View Photos &#x2192; </span> </Link>
       </div>
    )
 }
