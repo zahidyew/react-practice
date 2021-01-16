@@ -30,7 +30,7 @@ const PostItem = ({post}) => {
 
          <div id={'comments' + post.id} className="hide">
             {/* <Comments postId={post.id} /> */}
-            { // conditional rendering. if flag is true, then we display the comments
+            { // conditional rendering. if flag is true, then we fetch & display the comments
             flag === true && 
                <Comments postId={post.id} />
             }

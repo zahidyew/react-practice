@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 
 const PhotoItem = ({photo}) => {
    return (
-      <div className="content-div">
+      <div className="photo-child">
          <p> {photo.id}. {photo.title} </p>
+         <img src={photo.thumbnailUrl}></img>
       </div>
    )
 }

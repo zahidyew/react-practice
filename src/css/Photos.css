@@ -1,0 +1,18 @@
+div.photos-parent {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+}
+
+div.photo-child {
+   /* flex: 1 1 150px; */ /*  Stretching: */
+   flex: 0 1 550px; /*  No stretching: */
+   margin: 5px;
+}
+
+div.photo-child img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}

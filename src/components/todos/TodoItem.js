@@ -4,9 +4,18 @@ import PropTypes from 'prop-types'
 const TodoItem = ({todo}) => {
    return (
       <div className="content-div">
-         <p> {todo.id}. {todo.title} </p>
+         {todo.completed 
+            ? <p style={completedStyle}> {todo.id}. {todo.title} </p> 
+            : <p> {todo.id}. {todo.title} </p>
+         }
       </div>
    )
+}
+
+const completedStyle = {
+   textDecoration: "line-through",
+   fontWeight: "lighter",
+   color: "gray"
 }
 
 TodoItem.propTypes = {

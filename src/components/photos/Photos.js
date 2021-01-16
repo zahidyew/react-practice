@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import PhotoItem from './PhotoItem'
 import PropTypes from 'prop-types'
+import '../../css/Photos.css'
 
 const Photos = ({match}) => {
    const [photos, setPhotos] = useState([])
@@ -18,7 +19,7 @@ const Photos = ({match}) => {
    }, [match.params.albumId])
 
    return (
-      <div>
+      <div className="photos-parent">
          {photos.map(item => {
             return (
                <PhotoItem key={item.id} photo={item} />
